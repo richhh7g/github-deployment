@@ -10,5 +10,12 @@
     "scripts": {
         "dphp": "docker compose exec app php"
     },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/app/",
+            "Domain\\": "src/domain/",
+            "Infra\\": "src/infra/"
+        }
+    },
     "require": {}
 }
