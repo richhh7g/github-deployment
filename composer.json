@@ -8,14 +8,23 @@
         }
     ],
     "scripts": {
-        "dphp": "docker compose exec app php"
+        "dphp": "docker compose exec app php",
+        "test": "vendor/bin/pest"
     },
     "autoload": {
         "psr-4": {
             "App\\": "src/app/",
             "Domain\\": "src/domain/",
-            "Infra\\": "src/infra/"
+            "Infra\\": "src/infra/",
+            "Test\\": "test/"
         }
     },
-    "require": {}
+    "require-dev": {
+        "pestphp/pest": "~2.34"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
 }
