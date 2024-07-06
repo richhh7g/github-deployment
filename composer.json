@@ -7,5 +7,8 @@
             "email": "richhh7g@protonmail.com"
         }
     ],
+    "scripts": {
+        "dphp": "docker compose exec app php"
+    },
     "require": {}
 }
